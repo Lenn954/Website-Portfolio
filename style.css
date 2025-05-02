@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1A2646 0%, #0A0F1C 100%);
     color: var(--text-light);
-    paddig-top:0;
+    paddnig-top:0;
 }
 
 .navbar {
@@ -419,78 +419,56 @@ footer {
     }
 }
 
-
-@media (max-width: 575px) {
-    .navbar-brand img {
-        width: 40px;
-        height: 40px;
+@media (max-width: 576px) {
+    .hero-title,
+    .hero-subtitle,
+    .hero-description,
+    .hero-buttons,
+    .profile-image,
+    .btn,
+    .timeline-card,
+    .section-title {
+      max-width: 100%;
+      width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      box-sizing: border-box;
+      text-align: center;
     }
-
-    .hero-title {
-        font-size: 2rem;
-        text-align: center;
+  
+    .navbar,
+    .navbar-brand,
+    .nav-link,
+    .btn-chirru {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
-
-    .hero-subtitle {
-        font-size: 1.5rem;
-        text-align: center;
+  
+    .btn,
+    .btn-chirru {
+      width: 100%;
+      margin: 0.5rem 0;
     }
-
-    .hero-description {
-        font-size: 0.9rem;
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-
+  
     .profile-image {
-        max-width: 250px;
-        margin: 2rem auto 0 auto;
-        display: block;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    .skill-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill-icon {
-        width: 70px;
-        height: 70px;
-    }
-
-    .portfolio-item {
-        margin-bottom: 1.5rem;
-    }
-
-    .timeline-line {
-        left: 20px;
-    }
-
-    .timeline-dot {
-        left: 20px;
-    }
-
+  
+    .portfolio-item,
     .timeline-content {
-        width: calc(100% - 50px);
-        float: none;
-        padding-left: 20px;
+      width: 100% !important;
+      padding: 1rem;
+      float: none;
     }
-
-    .timeline-item.left .timeline-content,
-    .timeline-item.right .timeline-content {
-        float: none;
-        text-align: left;
-        padding: 0 0 0 20px;
+  
+    .timeline-line {
+      left: 20px;
     }
-}
+  
+    .timeline-dot {
+      left: 20px;
+    }
+  }
+  
