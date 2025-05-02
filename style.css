@@ -429,7 +429,7 @@ footer {
     .timeline-card,
     .section-title {
       max-width: 100%;
-      width: 100%;
+      width: 80%;
       padding-left: 1rem;
       padding-right: 1rem;
       box-sizing: border-box;
@@ -458,7 +458,7 @@ footer {
   
     .portfolio-item,
     .timeline-content {
-      width: 100% !important;
+      width: 80% !important;
       padding: 1rem;
       float: none;
     }
