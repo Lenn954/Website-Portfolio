@@ -9,6 +9,11 @@
     padding-bottom: 3rem;
 }
 
+html {
+    overflow-x: hidden;
+    position: relative; 
+  }
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1A2646 0%, #0A0F1C 100%);
@@ -503,4 +508,5 @@ footer {
         font-size: 0.8rem;
     }
 }
+
 
