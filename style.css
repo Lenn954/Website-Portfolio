@@ -356,6 +356,8 @@ footer {
 
 
 /* Responsive adjustments */
+/* URUTAN DIMULAI DARI BESAR KE KECIL */
+
 @media (max-width: 991px) {
     .timeline-line {
         left: 40px;
@@ -381,20 +383,6 @@ footer {
     }
 }
 
-@media (max-width: 575px) {
-    .timeline-card h3 {
-        font-size: 1.1rem;
-    }
-    
-    .timeline-card p {
-        font-size: 0.9rem;
-    }
-    
-    .timeline-date {
-        font-size: 0.8rem;
-    }
-}
-
 @media (max-width: 767px) {
     .hero-title {
         font-size: 2.5rem;
@@ -408,6 +396,7 @@ footer {
         margin-top: 2rem;
     }
     
+    /* Tombol hero sudah di-handle di 576px, tapi jika ingin di 767px juga, tambahkan di sini */
     .hero-buttons .btn {
         display: block;
         width: 100%;
@@ -419,22 +408,19 @@ footer {
     }
 }
 
+
 @media (max-width: 576px) {
-  .hero-title,
-  .hero-subtitle,
-  .hero-description,
-  .hero-buttons,
-  .profile-image,
-  .btn,
-  .timeline-card,
-  .section-title {
-    max-width: 100%;
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box;
+  /* HAPUS BLOK CSS YANG AGRESIF */
+  /* BLOK INI DIGANTI DENGAN YANG LEBIH SPESIFIK DI BAWAH */
+
+  /* MEMBUAT TAMPILAN HERO SECTION TEXT-ALIGN CENTER DI MOBILE */
+  #home .col-lg-7 {
     text-align: center;
   }
+  .hero-description {
+    max-width: 100%; /* Izinkan deskripsi hero full width di center */
+  }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -464,17 +450,22 @@ footer {
 
   .navbar,
   .navbar-brand,
-  .nav-link,
-  .btn-chirru {
+  .nav-link {
+    /* Hapus .btn-chirru dari sini */
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .btn,
-  .btn-chirru {
+  /* PERBAIKI ATURAN TOMBOL */
+  .hero-buttons .btn {
+    /* Hanya target tombol di hero */
     width: 100%;
     margin: 0.5rem 0;
   }
+
+  /* Biarkan .btn-chirru di navbar menggunakan style default-nya */
+  /* tidak perlu aturan width: 100% untuk .btn-chirru di sini */
+
 
   .profile-image {
     max-width: 250px;
@@ -496,4 +487,17 @@ footer {
   .timeline-dot {
     left: 20px;
   }
+
+  /* ATURAN DARI 575px DIGABUNG KE SINI */
+  .timeline-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-card p {
+        font-size: 0.9rem;
+    }
+    
+    .timeline-date {
+        font-size: 0.8rem;
+    }
 }
